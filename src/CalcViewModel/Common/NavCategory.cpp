@@ -45,6 +45,7 @@ static constexpr int PRESSURE_ID = 14;
 static constexpr int ANGLE_ID = 15;
 static constexpr int CURRENCY_ID = 16;
 static constexpr int GRAPHING_ID = 17;
+static constexpr int OPTICS_ID = 18;
 // ^^^ THESE CONSTANTS SHOULD NEVER CHANGE ^^^
 
 namespace // put the utils within this TU
@@ -112,6 +113,16 @@ namespace // put the utils within this TU
           MyVirtualKey::Number5,
           L"5",
           SUPPORTS_ALL },
+            NavCategoryInitializer{
+                ViewMode::Optics,
+                OPTICS_ID,
+                L"Optics",
+                L"OpticsMode",
+                L"\uE706",
+                CategoryGroupType::Calculator,
+                MyVirtualKey::Number6,
+                L"6",
+                SUPPORTS_ALL },
       NavCategoryInitializer{ ViewMode::Currency,
           CURRENCY_ID,
           L"Currency",
@@ -247,6 +258,11 @@ bool NavCategory::IsGraphingCalculatorViewMode(ViewModeType mode)
 bool NavCategory::IsDateCalculatorViewMode(ViewModeType mode)
 {
     return mode == ViewModeType::Date;
+}
+
+bool NavCategory::IsOpticsCalculatorViewMode(ViewModeType mode)
+{
+    return mode == ViewModeType::Optics;
 }
 
 bool NavCategory::IsConverterViewMode(ViewModeType mode)

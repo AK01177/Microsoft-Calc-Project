@@ -865,7 +865,10 @@
     <value>Scientific</value>
     <comment>Label for a control that activates scientific mode calculator layout</comment>
   </data>
-  <data name="standardModeButton.Content" xml:space="preserve">
+    <data name="OpticsModeButton.Content" xml:space="preserve">
+    <value>Optics</value>
+    </data>
+    <data name="standardModeButton.Content" xml:space="preserve">
     <value>Standard</value>
     <comment>Label for a control that activates standard mode calculator layout.</comment>
   </data>
@@ -901,7 +904,11 @@
     <value>Scientific</value>
     <comment>The text that shows in the dropdown navigation control in snapped mode when scientific calculator mode is selected.</comment>
   </data>
-  <data name="ProgrammerModeText" xml:space="preserve">
+    <data name="OpticsModeText" xml:space="preserve">
+    <value>Optics</value>
+</data>
+
+    <data name="ProgrammerModeText" xml:space="preserve">
     <value>Programmer</value>
     <comment>The text that shows in the dropdown navigation control in snapped mode when programmer calculator mode is selected.</comment>
   </data>

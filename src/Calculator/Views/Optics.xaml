@@ -1,0 +1,56 @@
+<UserControl x:Class="Calculator.Views.Optics"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d"
+             d:DesignHeight="450" d:DesignWidth="300">
+    <Grid Background="#1C2526">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Display Area -->
+        <TextBlock x:Name="Display" Text="0" FontSize="36" Foreground="White"
+                   HorizontalAlignment="Right" VerticalAlignment="Center"
+                   Margin="10" Grid.Row="0"/>
+
+        <!-- Dropdowns Section -->
+        <StackPanel Grid.Row="1" Margin="10">
+            <ComboBox x:Name="TypeSelector" Width="200" Height="30" Margin="0,10,0,10">
+                <ComboBoxItem Content="Lens" />
+                <ComboBoxItem Content="Mirror" />
+            </ComboBox>
+            <ComboBox x:Name="BehaviorSelector" Width="200" Height="30" Margin="0,10,0,10">
+                <ComboBoxItem Content="Converging" />
+                <ComboBoxItem Content="Diverging" />
+            </ComboBox>
+        </StackPanel>
+
+        <!-- Calculator Buttons (Keep existing layout and adapt as needed) -->
+        <Grid Grid.Row="1" Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <!-- Example: Retain existing buttons, adjust positioning if needed -->
+            <Button Content="7" Grid.Row="1" Grid.Column="0" />
+            <Button Content="8" Grid.Row="1" Grid.Column="1" />
+            <Button Content="9" Grid.Row="1" Grid.Column="2" />
+            <Button Content="/" Grid.Row="1" Grid.Column="3" />
+            <!-- Add more buttons as per standard calculator layout -->
+            <Button Content="0" Grid.Row="4" Grid.Column="1" />
+            <Button Content="=" Grid.Row="4" Grid.Column="2" Background="#00C4B4" />
+        </Grid>
+    </Grid>
+</UserControl>

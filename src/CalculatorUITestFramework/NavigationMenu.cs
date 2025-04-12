@@ -25,7 +25,8 @@ namespace CalculatorUITestFramework
         Power,
         Data,
         Pressure,
-        Angle
+        Angle,
+        Optics
     }
 
     public class NavigationMenu
@@ -60,6 +61,7 @@ namespace CalculatorUITestFramework
                 CalculatorMode.Data => "Data",
                 CalculatorMode.Pressure => "Pressure",
                 CalculatorMode.Angle => "Angle",
+                CalculatorMode.Optics => "Optics",
                 _ => throw (new ArgumentException("The mode is not valid"))
             };
 

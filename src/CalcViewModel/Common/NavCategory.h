@@ -45,7 +45,8 @@ namespace CalculatorApp::ViewModel
             Pressure = 14,
             Angle = 15,
             Currency = 16,
-            Graphing = 17
+            Graphing = 17,
+            Optics = 18
         };
 
     public
@@ -109,6 +110,7 @@ namespace CalculatorApp::ViewModel
             static bool IsGraphingCalculatorViewMode(ViewModeType mode);
             static bool IsDateCalculatorViewMode(ViewModeType mode);
             static bool IsConverterViewMode(ViewModeType mode);
+            static bool IsOpticsCalculatorViewMode(ViewModeType mode);
 
             internal : NavCategory(
                            Platform::String ^ name,
@@ -159,6 +161,7 @@ namespace CalculatorApp::ViewModel
 
             static bool IsValidViewMode(ViewMode mode);
             static bool IsViewModeEnabled(ViewMode mode);
+
 
             // For saving/restoring last mode used.
             static int Serialize(ViewMode mode);
