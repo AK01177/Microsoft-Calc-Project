@@ -41,11 +41,11 @@ The newly introduced **Optics Mode** allows users to calculate one of the three 
 
 ### Mirror Formula:
 For mirrors, the formula used is:
-\[ rac{1}{f} = rac{1}{v} + rac{1}{u} \]
+1/f = 1/v + 1/u
 
 ### Lens Formula:
 For lenses, the formula used is:
-\[ rac{1}{f} = rac{1}{v} - rac{1}{u} \]
+1/f = 1/v - 1/u
 
 ### Example Use Cases:
 - **Plane Mirror** 🪞: Always provides the same image distance as the object distance (v = u).
